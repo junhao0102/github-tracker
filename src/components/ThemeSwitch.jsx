@@ -6,7 +6,7 @@ export default function ThemeSwitch() {
   const { theme, setTheme } = useTheme();
 
   return (
-    <div className="flex items-center justify-between  gap-24">
+    <div className="flex items-center justify-between  gap-28">
       <Label htmlFor="theme-switch">
         {theme === "dark" ? "深色主題" : "淺色主題"}
       </Label>
