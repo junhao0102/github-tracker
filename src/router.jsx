@@ -1,17 +1,17 @@
 import { createBrowserRouter } from "react-router-dom";
 import MainLayout from "@/layout/MainLayout";
-import IndexPage from "@/pages/IndexPage"
-import ProjectPage from "@/pages/ProjectPage";
+import Index from "@/pages/Index";
+import Repository from "@/pages/Repository";
 
 export default createBrowserRouter([
   {
-    path: "/",              
-    element: <MainLayout />, 
+    path: "/",
+    element: <MainLayout />,
     children: [
-      { index: true, element: <IndexPage /> }, 
+      { index: true, element: <Index /> },
       {
         path: "projects/:repoName",
-        element: <ProjectPage />,        
+        element: <Repository />,
       },
     ],
   },
