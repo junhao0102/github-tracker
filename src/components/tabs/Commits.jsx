@@ -41,7 +41,7 @@ export default function Commits() {
             <Card className="relative w-[1000px] h-28 m-4" key={item.sha}>
               <CardContent className="flex flex-col p-4">
                 <div className="flex justify-between">
-                  <h2 className="text-xl break-words max-w-[70%]">
+                  <h2 className="text-lg font-semibold break-words">
                     {item.commit.message}
                   </h2>
                   <div className="absolute top-10 right-5 flex items-center gap-3">
@@ -91,7 +91,7 @@ export default function Commits() {
                     />
                   </Avatar>
                   <span className="flex text-sm items-center gap-1">
-                    <span className="text-sm text-blue-700">
+                    <span className="text-sm text-blue-600">
                       {item.commit.author.name}
                     </span>
                     <span className="text-xs text-muted-foreground">

@@ -37,7 +37,7 @@ export default function Readme() {
     <article>
       <Card>
         <CardHeader>
-          <CardTitle>README.md</CardTitle>
+          <CardTitle>Readme</CardTitle>
         </CardHeader>
         <CardContent>
           <ReactMarkdown remarkPlugins={[remarkGfm]}>{readme}</ReactMarkdown>
@@ -48,10 +48,10 @@ export default function Readme() {
     <article>
       <Card>
         <CardHeader>
-          <CardTitle>README.md</CardTitle>
+          <CardTitle>Readme</CardTitle>
         </CardHeader>
         <CardContent>
-          <>沒有README.md</>
+          <div className="text-center">沒有 README.md</div>
         </CardContent>
       </Card>
     </article>

@@ -26,7 +26,7 @@ export function RepositoryTabs() {
     <Tabs defaultValue="commit">
       <TabsList className="w-full">
         <TabsTrigger value="commit" className="w-1/4">
-          Commit
+          Commits
         </TabsTrigger>
         <TabsTrigger value="readme" className="w-1/4">
           Readme
