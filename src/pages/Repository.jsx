@@ -5,6 +5,7 @@ import { Avatar, AvatarImage } from "@/components/ui/avatar";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import Readme from "@/components/tabs/Readme";
 import Commits from "@/components/tabs/Commits";
+import Issues from "@/components/tabs/Issues";
 export function RepositoryHeader({ repoInfo }) {
   return (
     <div className="flex items-center gap-5">
@@ -45,7 +46,9 @@ export function RepositoryTabs() {
       <TabsContent value="readme">
         <Readme />
       </TabsContent>
-      <TabsContent value="issue">issue</TabsContent>
+      <TabsContent value="issue">
+        <Issues />
+      </TabsContent>
       <TabsContent value="PR">pr</TabsContent>
     </Tabs>
   );
