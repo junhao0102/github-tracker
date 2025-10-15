@@ -23,13 +23,13 @@ export function RepositoryHeader({ repoInfo }) {
 
 export function RepositoryTabs() {
   return (
-    <Tabs defaultValue="repo">
+    <Tabs defaultValue="commit">
       <TabsList className="w-full">
-        <TabsTrigger value="repo" className="w-1/4">
-          Repo
-        </TabsTrigger>
         <TabsTrigger value="commit" className="w-1/4">
-          commit
+          Commit
+        </TabsTrigger>
+        <TabsTrigger value="readme" className="w-1/4">
+          Readme
         </TabsTrigger>
         <TabsTrigger value="issue" className="w-1/4">
           Issues
@@ -38,11 +38,12 @@ export function RepositoryTabs() {
           Pull Request
         </TabsTrigger>
       </TabsList>
-      <TabsContent value="repo">
-        <Readme />
-      </TabsContent>
+
       <TabsContent value="commit">
         <Commits />
+      </TabsContent>
+      <TabsContent value="readme">
+        <Readme />
       </TabsContent>
       <TabsContent value="issue">issue</TabsContent>
       <TabsContent value="PR">pr</TabsContent>

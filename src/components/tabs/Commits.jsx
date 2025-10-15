@@ -20,7 +20,6 @@ export default function Commits() {
   async function fetchCommits() {
     try {
       const response = await api.get(`/repos/${OWNER}/${repoName}/commits`);
-      console.log(response.data);
       setCommits(response.data);
     } catch (e) {
       console.error("fetch commits error :" + e.message);
